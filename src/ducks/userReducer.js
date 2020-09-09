@@ -4,10 +4,10 @@ const initialState = {
   isLoggedIn: false,
 }
 
-//Action constant - we need to name our actions
+//Action constants - we need to name our actions
 const LOGIN_USER = 'LOGIN_USER'
 
-//Action - how we interact with the redux state
+//Actions - how we interact with the redux state
 export function loginUser(name) {
   return {
     type: LOGIN_USER,
