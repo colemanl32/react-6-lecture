@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import './cart.css'
 
 class Cart extends Component {
@@ -22,4 +23,9 @@ class Cart extends Component {
     )
   }
 }
-export default Cart
+
+const mapStateToProps = (reduxState) => {
+  return reduxState
+}
+
+export default connect(mapStateToProps)(Cart)
